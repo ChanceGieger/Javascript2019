@@ -8,3 +8,6 @@ Learning Javascript in 2019
     document => Refers the Web Page
     getElementById() => Access a specific HTML item by ID
     innerHTML => Access the text between the two like tags
+
+    var ->
+    parseInt -> turns inputed numbers to integers
