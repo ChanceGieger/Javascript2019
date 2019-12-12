@@ -12,6 +12,6 @@ Learning Javascript in 2019
     var ->
     parseInt -> turns inputed numbers to integers
 
-    function ______{
-      ______
+    function (Name){
+      (Code)
     }
