@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Challenge 1</title>
+
+    <script type="text/javascript">
+      function AE(){
+        var A1 = parseInt(document.getElementById('A1').value);
+        var E2 = parseInt(document.getElementById('E2').value);
+
+        if(A1 > 18 && E2 > 12){
+          alert("Graduated");
+        }else{
+          alert("Get to class.")
+        }
+      }
+    </script>
+  </head>
+  <body>
+    Age : <input type="text" name="Age" id="A1"><br />
+    Years of Education : <input type="text" name="Years of Education" id="E2"><br />
+    <button type="button" name="Find" onClick="AE()">Answer</button>
+  </body>
+</html>
