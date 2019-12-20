@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TrollSite</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="CSS/master.css">
+
+    <script type="text/javascript">
+      function LanguagePicker(){
+        var num = parseInt(Math.random() * 4) + 1;
+
+        if(num == 1){
+          maltese();
+        }else if(num == 2){
+          french();
+        }
+        else if(num == 3){
+          chinese();
+        }
+        else{
+          yucatecMaya();
+        }
+      }
+
+      function  maltese(){
+        document.getElementById("P1").innerHTML = "Il-qattus għadu hemm. Huwa joqgħod u jagħmel arloġġi fuq il-kompjuter. Dan jista ' jkun il-bidu ta ' storja ta ' orrur, iżda huwa biss qattus li taf.";
+        document.getElementById("P2").innerHTML = "Il-le ġjun Ruman komuni ta ' l-ajru huwa b b ' pilum, scutum u sett ta ' armatura. Il pilum huwa Javalina Rumana, dawn kienu mormija qabel ma kienu involuti fil melee. Il-scutum huwa tarka ta ' Pjazza kbira. L-armatura tagħhom tista ' tkun jew katina, pjanċa, jew armatura ta ' skala.";
+        document.getElementById("button").innerHTML = "Ikklikkja biex titgħallem aktar!"
+      }
+      function  french(){
+        document.getElementById("P1").innerHTML = "Le chat est toujours là. Il s'assied et te regarde sur l'ordinateur. C'est peut-être le début d'une histoire d'horreur, mais c'est juste un chat que vous connaissez.";
+        document.getElementById("P2").innerHTML = "Le légionnaire romain commun est équipé d'un pilum, d'un scutum et d'un ensemble d'armures. Le pilum est un Javaline romain, ceux-ci ont été jetés avant qu'ils ne se livrent à la mêlée. Le scutum est un grand bouclier carré. Leur armure peut être soit une chaîne, une plaque ou une armure à l'échelle.";
+        document.getElementById("button").innerHTML = "Cliquez pour en savoir plus!"
+      }
+      function  chinese(){
+        document.getElementById("P1").innerHTML = "猫还在那儿。他坐在电脑上看着你。这可能是一个恐怖故事的开始，但它只是一只猫，你知道。";
+        document.getElementById("P2").innerHTML = "普通的罗马军团装备了一个尖顶，一个盔甲和一套盔甲。皮伦是罗马爪哇线，这些是在它们进行近战之前被扔的。切口是大方形盾牌。他们的盔甲可以是链、板或比例盔甲。";
+        document.getElementById("button").innerHTML = "点击了解更多！"
+      }
+      function  yucatecMaya(){
+        document.getElementById("P1").innerHTML = "Ti' u Chúuns le miiso'. Ku kutaj yéetel ku ti' le computadora. Este u páajtal u comienzo jump'éel tsikbal terror, ba'ale' chéen jmiis in k'ajóol.";
+        document.getElementById("P2").innerHTML = "Le legionario romano común u equipado yéetel juntúul pilum, scutum yéetel jump'éel nu'ukulo'ob armaduras. Le pilum jach jump'éel Javaline romano, lelo'oba' bino'ob lanzados Ma'ili' ti' u u involucraran ti' wíinkilal in wíinkilil. Le scutum jach juntúul nuxi' escudo cuadrado. U armadura je'el u beel ti' tsolokbal, placa wa armadura escala.";
+        document.getElementById("button").innerHTML = "Beetik clic tia'al a wojeltik!"
+      }
+
+      function SmallBig(){
+        var choice = parseInt(Math.random() * 2) + 1;
+
+        if(choice == 1){
+          document.getElementById("button").style.width = "100%";
+          document.getElementById("button").style.height = "100px";
+        }else{
+          document.getElementById("button").style.width = "10%";
+          document.getElementById("button").style.height = "10px";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="jumbotron text-center">
+      <h1>Troll Site</h1>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <p id="P1" onMouseOver="LanguagePicker()">The cat is still there. He sits and watches you on the computer. This may be the start of a horror story, but it is just a cat you know.</p>
+          <img src="Images/Cat.jpg" alt="Cat" style="width: 100%;">
+        </div>
+        <div class="col-sm-4">
+          <p id="P2" onMouseOver="LanguagePicker()">The common Roman legionair is equiped with a pilum, scutum and a set of armour. The pilum is a Roman Javaline, these were thrown before they engaged in melee. The scutum is large square shield. Their armour could be either chain, plate, or scale armour.</p>
+          <img src="Images/Roman.jpg" alt="Roman" style="width: 100%;">
+        </div>
+        <div class="col-sm-4">
+          <button type="button" name="button" onClick="SmallBig()" id="button">Click to Learn More!</button>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
