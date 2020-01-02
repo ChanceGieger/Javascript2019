@@ -15,3 +15,10 @@ Learning Javascript in 2019
     function (Name){
       (Code)
     }
+
+
+
+
+3. Form Validation :
+      * Forms take in information
+      * To validate a form means to check the information and make sure it is correct.
